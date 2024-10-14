@@ -10,7 +10,7 @@ interface MyProductProps {
 
 export default function MyProduct({ svg, description, headline }: MyProductProps) {
     return (
-        <div className="flex w-auto flex-col gap-2 bg-gray-50 p-6 rounded-lg">
+        <div className="flex w-auto flex-col gap-4 bg-gray-50 p-6 rounded-lg">
             <div className="flex justify-between items-center">
                 {svg}
             </div>

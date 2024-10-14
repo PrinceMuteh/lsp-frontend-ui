@@ -1,12 +1,12 @@
 'use client'
 import { useState } from "react";
-import Image from "next/image"; //
+import Image from "next/image";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <nav className="text-white p-4 flex flex-col md:flex-row justify-between items-center  rounded-lg">
+        <nav className="text-white  md:px-32 flex flex-col md:flex-row justify-between items-center  rounded-lg">
             <div className=" flex justify-between items-center w-full">
                 <div className="text-xl font-bold">
                     <Image
@@ -17,14 +17,14 @@ const Navbar = () => {
                         className="rounded-lg shadow-lg ml-4 w-14 h-auto md:w-18 lg:w-18"
                     />
                 </div>
-                <div className="hidden md:flex space-x-4 lg:gap-10">
-                    <a href="#feature" className="text-white hover:text-customGreen">
+                <div className="hidden md:flex text-base space-x-4 lg:gap-10">
+                    <a href="#feature" className="text-white hover:text-customGreen  transition-all duration-300">
                         Features
                     </a>
-                    <a href="#partners" className="text-white hover:text-customGreen">
+                    <a href="#partners" className="text-white hover:text-customGreen  transition-all duration-300">
                         Partners
                     </a>
-                    <a href="#faq" className="text-white hover:text-customGreen">
+                    <a href="#faq" className="text-white hover:text-customGreen  transition-all duration-300">
                         FAQ
                     </a>
                 </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
                             </svg>
                         </button>
                     </div>
-                    <div className="hidden justify-end items-end md:block customGreen rounded-lg p-3 font-semibold bg-customGreen text-white text-sm text-right">
+                    <div className="hidden justify-end items-end md:block customGreen rounded-lg p-4 font-semibold bg-customGreen text-white text-sm text-right">
                         Book a Demo
                     </div>
                 </div>

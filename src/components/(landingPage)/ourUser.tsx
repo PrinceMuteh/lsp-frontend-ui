@@ -37,8 +37,8 @@ export default OurUser;
 
 function Content({ img, details, username, type }: ContentProps): JSX.Element {
     return (
-        <div className="p-6 bg-white rounded-2xl shadow-lg">
-            <p className="text-gray-700">{details}</p>
+        <div className="p-10 bg-white rounded-2xl">
+            <p className="text-gray-700 text-justify">{details}</p>
             <div className="flex items-center mt-6 gap-4">
                 <Image
                     src={img}

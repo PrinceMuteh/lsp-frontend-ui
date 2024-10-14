@@ -11,9 +11,7 @@ interface FaqProps {
 
 const Faq: React.FC<FaqProps> = ({ header, description }) => {
     const [isOpen, setIsOpen] = useState(false);
-
     const toggleFaq = () => setIsOpen(!isOpen);
-
     return (
         <div className="my-4 w-full">
             <label className="w-full cursor-pointer">
